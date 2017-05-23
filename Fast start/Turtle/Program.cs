@@ -41,44 +41,33 @@ namespace TurtleTrainig
         {
             Turtle.Speed = 9;
 
-            
-
             //ТОРТ
 
             //T
-
-            Turtle.X = 200;
-            Turtle.Y = 200;
-            letterT();
-
+                Turtle.X = 200;
+                Turtle.Y = 200;
+                letterT();
             //T-end
 
             //O
-            
-            Turtle.Angle = 0;
-            Turtle.X = 260;
-            Turtle.Y = 200;
-            letterO();
-
+                Turtle.Angle = 0;
+                Turtle.X = 260;
+                Turtle.Y = 200;
+                letterO();
             //O-end
 
             //P
-
-            Turtle.Angle = 0;
-            Turtle.X = 360;
-            Turtle.Y = 200;
-            letterP();
-            
-
+                Turtle.Angle = 0;
+                Turtle.X = 360;
+                Turtle.Y = 200;
+                letterP();
             //P-end
             
             //T
-
-            Turtle.Angle = 0;
-            Turtle.X = 460;
-            Turtle.Y = 200;
-
-            letterT();
+                Turtle.Angle = 0;
+                Turtle.X = 460;
+                Turtle.Y = 200;
+                letterT();
             //T-end
 
         }
