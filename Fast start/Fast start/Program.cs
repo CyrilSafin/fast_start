@@ -21,6 +21,7 @@ namespace Fast_start
             
             if (g == "комедия" || g == "Комедия" || g == "комедию" || g == "Комедию")
             {
+                Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine("В таком случае, рекомендую посмотреть:");
                 Console.WriteLine("* Иван васильевич меняет профессию");
                 Console.WriteLine("* Назад в будущее");
@@ -28,6 +29,7 @@ namespace Fast_start
             }
             else if (g == "драма" || g == "Драма" || g == "драму" || g == "Драму")
             {
+                Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine("В таком случае, рекомендую посмотреть:");
                 Console.WriteLine("* Зеленая миля");
                 Console.WriteLine("* Форест Гамп");
@@ -35,6 +37,7 @@ namespace Fast_start
             }
             else if (g == "фантастика" || g == "Фантастика" || g == "фантастика" || g == "Фантастику")
             {
+                Console.ForegroundColor = ConsoleColor.Yellow;
                 Console.WriteLine("В таком случае, рекомендую посмотреть:");
                 Console.WriteLine("* Чужой");
                 Console.WriteLine("* Терминатор");
@@ -46,6 +49,7 @@ namespace Fast_start
                 int age = Convert.ToInt32(Console.ReadLine());
                 if (age > 18)
                 {
+                    Console.ForegroundColor = ConsoleColor.Yellow;
                     Console.WriteLine("В таком случае, рекомендую посмотреть:");
                     Console.WriteLine("* Большие сиськи");
                     Console.WriteLine("* Длинные письки");
