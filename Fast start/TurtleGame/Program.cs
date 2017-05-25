@@ -17,30 +17,24 @@ namespace TurtleGame
 
             GraphicsWindow.BrushColor = "Red";
             var eat = Shapes.AddRectangle(10, 10);
+            int x = 200;
+            int y = 200;
+
+            Random rand = new Random();
+
+            Shapes.Move(eat, x, y);
 
             while (true)
             {
-                Random x = new Random();
-                int x_eat = x.Next(0, 500);
-                int x_eat1 = x_eat + 10;
+                Turtle.Move(10);
 
-                    Thread.Sleep(20);
-
-                Random y = new Random();
-                int y_eat = y.Next(1, 500);
-                int y_eat1 = y_eat + 10;
-                
-                    Shapes.Move(eat, x_eat, y_eat);
-
-                int x_trt = Turtle.X;
-                int y_trt = Turtle.Y;
-                
-                if (x_eat<x_trt && x_trt<x_eat1 && y_eat<y_trt && y_trt<y_eat1)
+                if (Turtle.X >= x && Turtle.X <= (x + 10) && Turtle.Y >= y && Turtle.Y <= (y + 10))
                 {
-                    Shapes.Move(eat, x.Next(0, 500), y.Next(0, 500));
-                    Turtle.Move(10);
+                    x = rand.Next(0, GraphicsWindow.Width);
+                    y = rand.Next(0, GraphicsWindow.Height);
+                    Shapes.Move(eat, x, y);
                 }
-                else Turtle.Move(10);
+          
 
             }
         }
